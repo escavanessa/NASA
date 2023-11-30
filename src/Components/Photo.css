@@ -1,0 +1,13 @@
+.Photo-Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card{
+    width: 400px;
+    height: 600px;
+    background-color: beige;
+    margin-top: 40px;
+    border-radius: 20px;
+}
