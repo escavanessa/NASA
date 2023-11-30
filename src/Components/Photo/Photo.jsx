@@ -1,0 +1,65 @@
+import React from 'react'
+import './Photo.css'
+import { useState } from 'react';
+import { useEffect } from 'react';
+
+const baseUrl = 'https://api.nasa.gov/planetary/apod?api_key=';
+const apiKey = 'K94Zcfj55KWoHu8AB1rj6Q4hdcFjsgAfyfo97Zjs'
+
+function fetchData() {
+  const dataPromise = new Promise((resolve, reject) => {
+    try {
+      fetch(baseUrl + apiKey)
+        .then(response => response.json())
+        .then(json => {
+          resolve(json)
+          console.log(json)
+        })
+    } catch (error) {
+      reject(error)
+      console.log(error)
+    }
+  })
+  return dataPromise
+}
+
+
+
+
+const Photo = () => {
+    const [data, setData] = useState({})
+
+    useEffect(() => {
+      fetchData().then((response) => {
+        setData(response)
+        console.log(response)
+      }) .catch(
+        (error) => {console.log(error)}
+      )
+    
+    }, []);
+
+
+
+
+
+
+
+    return (
+        <>
+            <div className='Photo-Wrapper'>
+                <div className='Card'>
+                    <img src={data.url}></img>
+                </div>
+            </div>
+            <div className='Info-Wrapper'>
+                <div className='Info'>
+                    <h1>{data.date}</h1>
+                    <h2>{data.explanation}</h2>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Photo

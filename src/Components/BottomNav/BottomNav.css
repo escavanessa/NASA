@@ -1,0 +1,23 @@
+.botm-nav{
+    display: flex;
+    background-color: #020617;
+    margin-top:20px;
+    height: 70px;
+    align-items: center;
+}
+
+.nav-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn {
+    background-color: aliceblue;
+    width: 60px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+

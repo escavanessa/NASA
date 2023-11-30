@@ -1,0 +1,46 @@
+.Photo-Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card{
+    width: 400px;
+    height: 600px;
+    background-color: beige;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+img{
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.Info-Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Info{
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    background-color: #334155;
+    margin-top: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+h2{
+   color: #cbd5e1;
+}
+
+h1{
+    color: #020617;
+}
+
+
+
