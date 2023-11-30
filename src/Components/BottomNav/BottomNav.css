@@ -14,8 +14,9 @@
 }
 
 .btn {
-    background-color: aliceblue;
+    background-color: beige;
     width: 60px;
+    height: 40px;
     border-radius: 6px;
     cursor: pointer;
 }

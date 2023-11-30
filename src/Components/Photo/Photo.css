@@ -34,12 +34,27 @@ img{
     overflow: hidden;
 }
 
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.myBtn{
+    background-color: beige !important;
+    width: 40px;
+    height: 30px;
+}
+
+
 h2{
    color: #cbd5e1;
 }
 
 h1{
     color: #020617;
+    font-size: larger !important;
 }
 
 

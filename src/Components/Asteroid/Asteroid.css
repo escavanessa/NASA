@@ -1,0 +1,49 @@
+.asteroid-container{
+    display: flex !important;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.title{
+    font-size: x-large;
+}
+
+.asteroid-name{
+    font-size: x-large;
+}
+
+
+.asteroid-size{
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.asteroid-approach{
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.margin{
+    margin-bottom: 8px;
+}
+
+
+.asteroid-velocity{
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.asteroid-id{
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+select{
+    width: 200px;
+}
