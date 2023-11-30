@@ -1,7 +1,6 @@
 
-
 import './App.css'
-import { Asteroids } from './Components/Asteroids';
+import { Asteroids } from './Components/Asteroid/Asteroids';
 import BottomNav from './Components/BottomNav/BottomNav';
 import Photo from './Components/Photo/Photo';
 
