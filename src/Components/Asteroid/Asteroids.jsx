@@ -98,8 +98,7 @@ export const Asteroids = () => {
                   <SwiperSlide>
                     <div className='asteroid-container'>
                       <div className='asteroid-name'>
-                        <h1 className='title'>Name</h1>
-                        {asteroid.name}
+                        <h1 className='title'>Name: {asteroid.name}</h1>
                       </div>
                       <div className='asteroid-size'>
                         <h1 className='title'>Asteroid Size: </h1>
@@ -112,7 +111,7 @@ export const Asteroids = () => {
                         <h1 className='margin'>Miss Distance: <span>{asteroid.close_approach_data[0].miss_distance.kilometers} km/h </span></h1>
                       </div>
                       <div className='asteroid-velocity'>
-                        <h1  className='title'>Velocity</h1>
+                        <h1 className='title'>Velocity</h1>
                         <h1>{asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour} km/h</h1>
                       </div>
                       <div className='asteroid-id'>
@@ -125,12 +124,12 @@ export const Asteroids = () => {
                 )
               })
             }
-            ...
           </Swiper>
         </div>
       </div>
       <div className='Info-Wrapper'>
-        <div className='Info'>
+        <div className='asteroid-Info'>
+
           <select onChange={handleChange}>
             {
               Object.keys(data.near_earth_objects || {}).map((fecha, index) => {
@@ -140,6 +139,7 @@ export const Asteroids = () => {
               })
             }
           </select>
+          <h2>Select a date and view all the Asteroids that are passing by and waving at Earth!</h2>
         </div>
       </div>
     </>

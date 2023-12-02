@@ -4,6 +4,8 @@
     margin-top:20px;
     height: 70px;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav-btn-container{
@@ -13,12 +15,10 @@
     padding: 10px;
 }
 
-.btn {
-    background-color: beige;
-    width: 60px;
-    height: 40px;
-    border-radius: 6px;
+li {
+    color: beige;
     cursor: pointer;
 }
+
 
 

@@ -4,16 +4,14 @@ import './BottomNav.css'
 const BottomNav = () => {
   return (
     <>
-    <div className='botm-nav'>
-        <div className='nav-btn-container'>
-            <button className='btn'>btn</button>
-            <button className='btn'>btn</button>
-            <button className='btn'>btn</button>
-            <button className='btn'>btn</button>
-            <button className='btn'>btn</button>
-            <button className='btn'>btn</button>
-        </div>
-    </div>
+      <div className='botm-nav'>
+        <ul className='nav-btn-container'>
+          <li>Home</li>
+          <li>Asteroids</li>
+          <li>Mars</li>
+          <li>Solar</li>
+        </ul>
+      </div>
     </>
   )
 }
