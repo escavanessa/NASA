@@ -9,7 +9,7 @@ const BottomNav = () => {
         <ul className='nav-btn-container'>
           <li><Link to={'/'}>Home</Link></li>
           <li><Link to={'ast'}>Asteroids</Link></li>
-          <li>Mars</li>
+          <li><Link to={'mars'}>Mars</Link></li>
           <li>Solar</li>
         </ul>
       </div>

@@ -1,11 +1,12 @@
 .botm-nav{
     display: flex;
     background-color: #020617;
-    margin-top:20px;
     height: 70px;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    position: fixed;
+    bottom: 0;
 }
 
 .nav-btn-container{
@@ -13,11 +14,13 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+
 }
 
 li {
     color: beige;
     cursor: pointer;
+    margin: 22px;
 }
 
 
