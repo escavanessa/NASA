@@ -1,12 +1,11 @@
 .botm-nav{
     display: flex;
-    background-color: #020617;
+    background-color: #e4e4e7;
     height: 70px;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 .nav-btn-container{
@@ -14,14 +13,14 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
+    border-top: solid 1px #71717a;
 }
 
 li {
-    color: beige;
+    color: #27272a;
+    font-style: oblique;
+    font-weight: 600;
     cursor: pointer;
     margin: 22px;
 }
-
-
 

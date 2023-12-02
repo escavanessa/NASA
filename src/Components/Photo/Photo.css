@@ -7,9 +7,8 @@
 .Card{
     width: 400px;
     height: 600px;
-    background-color: beige;
-    margin-top: 40px;
     border-radius: 20px;
+    padding: 10px;
 }
 
 img{
@@ -27,9 +26,10 @@ img{
 .Info{
     width: 400px;
     height: 150px;
-    padding: 10px;
-    background-color: #334155;
+    margin-left: 10px;
+    background-color: #e4e4e7;
     margin-top: 10px;
+    margin-right: 10px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -38,25 +38,33 @@ img{
 .inline{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 6px;
 }
 
+.more{
+    margin-left: 160px;
+}
 .myBtn{
-    background-color: beige !important;
-    border-radius: 8px;
-    width: 40px;
+    background-color: #e4e4e7 !important;
+    border: solid 1px #27272a !important;
+    border-radius: 20px;
+    width: 50px;
     height: 30px;
+    margin-right: 10px;
     color: #020617;
 }
 
 
 h2{
-   color: #cbd5e1;
+   color: #27272a;
 }
 
 h1{
-    color: #020617;
+    color: #18181b;
     font-size: larger !important;
+    font-weight: 600 !important;
+    margin-left: 10px !important;
 }
 
 

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Modals from './Modal';
 import BottomNav from '../BottomNav/BottomNav';
+import TopLogo from '../TopLogo/TopLogo';
 
 
 const baseUrl = 'https://api.nasa.gov/planetary/apod?api_key=';
@@ -50,6 +51,7 @@ const Photo = () => {
 
   return (
     <>
+      <TopLogo />
       <div className='Photo-Wrapper'>
         <div className='Card'>
           <img src={data.url}></img>
@@ -59,7 +61,7 @@ const Photo = () => {
         <div className='Info'>
           <div className='inline'>
             <h1>{data.date}</h1>
-            <Modals data={data} />
+            <span className='more'>More</span><Modals data={data} />
           </div>
           <h2>{data.explanation}</h2>
         </div>
