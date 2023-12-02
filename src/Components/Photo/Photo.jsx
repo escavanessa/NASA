@@ -3,6 +3,7 @@ import './Photo.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Modals from './Modal';
+import BottomNav from '../BottomNav/BottomNav';
 
 
 const baseUrl = 'https://api.nasa.gov/planetary/apod?api_key=';
@@ -63,6 +64,7 @@ const Photo = () => {
           <h2>{data.explanation}</h2>
         </div>
       </div>
+      <BottomNav />
     </>
   )
 }

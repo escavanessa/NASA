@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import BottomNav from '../BottomNav/BottomNav';
+
 
 
 
@@ -51,37 +53,41 @@ const Mars = () => {
 
 
     return (
-        <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-        >
-            {
-                data.photos && data.photos.map((image, index) => {
-                    return (
-                        <>
-                            <SwiperSlide key={index}>
-                                <img className='mars-img' src={image.img_src}></img>
-                                <div className='Mars-Wrapper'>
-                                    <div className='Mars-info'>
-                                        <div className='mars-title'>
-                                            <h1>{image.camera.full_name}</h1>
+        <>
+            <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                {
+                    data.photos && data.photos.map((image, index) => {
+                        return (
+                            <>
+                                <SwiperSlide key={index}>
+                                    <img className='mars-img' src={image.img_src}></img>
+                                    <div className='Mars-Wrapper'>
+                                        <div className='Mars-info'>
+                                            <div className='mars-title'>
+                                                <h1>{image.camera.full_name}</h1>
+                                            </div>
+                                            <h2> ID: {image.id}</h2>
+                                            <h2>Image Date: {image.earth_date}</h2>
+                                            <h2>Landing Date:{image.rover.landing_date}</h2>
+                                            <h2>Rover Name: {image.rover.name}</h2>
+                                            <h2>Rover Status: {image.rover.status}</h2>
                                         </div>
-                                        <h2> ID: {image.id}</h2>
-                                        <h2>Image Date: {image.earth_date}</h2>
-                                        <h2>Landing Date:{image.rover.landing_date}</h2>
-                                        <h2>Rover Name: {image.rover.name}</h2>
-                                        <h2>Rover Status: {image.rover.status}</h2>
                                     </div>
-                                </div>
-                            </SwiperSlide>
+                                </SwiperSlide>
 
-                        </>
-                    )
-                })
-            }
-        </Swiper>
+                            </>
+                        )
+                    })
+                }
+            </Swiper>
+            <BottomNav />
+        </>
+
     )
 }
 

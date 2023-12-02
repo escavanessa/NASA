@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import './Asteroid.css'
+import BottomNav from '../BottomNav/BottomNav';
+
 
 
 
@@ -142,6 +144,7 @@ export const Asteroids = () => {
           <h2>Select a date and view all the Asteroids that are passing by and waving at Earth!</h2>
         </div>
       </div>
+      <BottomNav />
     </>
   )
 }

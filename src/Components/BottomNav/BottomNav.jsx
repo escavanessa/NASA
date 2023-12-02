@@ -1,13 +1,14 @@
 import React from 'react'
 import './BottomNav.css'
+import { Link } from 'react-router-dom'
 
 const BottomNav = () => {
   return (
     <>
       <div className='botm-nav'>
         <ul className='nav-btn-container'>
-          <li>Home</li>
-          <li>Asteroids</li>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'ast'}>Asteroids</Link></li>
           <li>Mars</li>
           <li>Solar</li>
         </ul>
