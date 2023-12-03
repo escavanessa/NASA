@@ -63,7 +63,9 @@ const Photo = () => {
             <h1>{data.date}</h1>
             <span className='more'>More</span><Modals data={data} />
           </div>
-          <h2>{data.explanation}</h2>
+
+            <h2 >{data.explanation}</h2>
+
         </div>
       </div>
       <BottomNav />

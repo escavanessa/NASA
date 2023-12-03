@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Asteroid.css'
 import BottomNav from '../BottomNav/BottomNav';
+import TopLogo from '../TopLogo/TopLogo';
 
 
 
@@ -85,6 +86,7 @@ export const Asteroids = () => {
 
   return (
     <>
+    <TopLogo />
       <div className='Photo-Wrapper'>
         <div className='Card'>
           <Swiper
@@ -104,13 +106,13 @@ export const Asteroids = () => {
                       </div>
                       <div className='asteroid-size'>
                         <h1 className='title'>Asteroid Size: </h1>
-                        <span>{asteroid.estimated_diameter.kilometers.estimated_diameter_max}</span>
+                        <span className='size'>{asteroid.estimated_diameter.kilometers.estimated_diameter_max}</span>
                       </div>
                       <div className='asteroid-approach'>
                         <h1 className='title'>Approach</h1>
                         <h1 className='margin'>Date: <span>{asteroid.close_approach_data[0].close_approach_date_full}</span></h1>
                         <h1 className='margin'>Orbiting Body:  <span>{asteroid.close_approach_data[0].orbiting_body}</span></h1>
-                        <h1 className='margin'>Miss Distance: <span>{asteroid.close_approach_data[0].miss_distance.kilometers} km/h </span></h1>
+                        <h1 className='margin'>Miss Distance: <span>{asteroid.close_approach_data[0].miss_distance.kilometers} kilometers </span></h1>
                       </div>
                       <div className='asteroid-velocity'>
                         <h1 className='title'>Velocity</h1>
@@ -118,7 +120,7 @@ export const Asteroids = () => {
                       </div>
                       <div className='asteroid-id'>
                         <h1 className='title'>ID</h1>
-                        {asteroid.neo_reference_id}
+                        <span className='id'>{asteroid.neo_reference_id}</span>
                       </div>
                     </div>
 
