@@ -9,6 +9,7 @@ import './index.css'
 import Photo from './Components/Photo/Photo.jsx';
 import { Asteroids } from './Components/Asteroid/Asteroids.jsx';
 import Mars from './Components/Mars/Mars.jsx';
+import Solar from './Components/Solar/Solar.jsx';
 
 
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "mars",
     element: <Mars />,
+  },
+  {
+    path: "solar",
+    element: <Solar />,
   },
 
 ]);

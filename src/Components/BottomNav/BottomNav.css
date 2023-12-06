@@ -1,13 +1,13 @@
 .botm-nav{
     display: flex;
     background-color: #172554;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
     height: 80px;
     align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .nav-btn-container{
@@ -30,3 +30,6 @@ li {
     border-radius: 20px;
 }
 
+.top {
+    box-shadow: 0 -5px 5px -5px #333;
+}
