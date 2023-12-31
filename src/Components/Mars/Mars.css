@@ -9,16 +9,39 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 6px;
     width: 400px;
-    height: 180px;
+    height: 220px;
     padding: 10px;
-    background-color: #334155;
     margin-top: 10px;
-    border-radius: 20px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 1px #e4e4e7;
 }
 
 .mars-img{
-    padding: 8px;
-    height: 400px !important;
+    height: 500px !important;
     width: 500px !important;
+    padding: 8px;
+    border-radius: 20px !important;
+}
+
+
+.mars-title{
+    margin-bottom: 20px;
+}
+
+.mars-rover-cont{
+    padding: 8px;
+    margin-bottom: 80px;
+}
+
+.mars-rover-card{
+    border: solid 1px #e4e4e7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mars-rover-title{
+    font-size: larger;
+    border-bottom: solid 1px #e4e4e7;
+    margin-bottom: 10px;
 }

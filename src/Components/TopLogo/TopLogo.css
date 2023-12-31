@@ -3,14 +3,23 @@
     padding: 10px;
 }
 
+.logo-title{
+    margin-left: 0px !important;
+    font-size: x-large !important;
+}
+
 .Logo-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom: solid 1px #71717a;
+    border-bottom: solid 1px #d1d5db;
 }
 
 h1{
     margin-bottom: 6px;
+}
+
+.stars{
+    font-size: x-large;
 }

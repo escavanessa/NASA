@@ -53,18 +53,16 @@ const Photo = () => {
     <>
       <TopLogo />
       <div className='Photo-Wrapper'>
-        <div className='Card'>
           <img src={data.url}></img>
-        </div>
       </div>
       <div className='Info-Wrapper'>
         <div className='Info'>
           <div className='inline'>
-            <h1>{data.date}</h1>
-            <span className='more'>More</span><Modals data={data} />
+            <h1 className='photo-date'>{data.date}</h1>
+
           </div>
 
-            <h2 >{data.explanation}</h2>
+          <h2 className='photo-expl'>{data.explanation}</h2>
 
         </div>
       </div>

@@ -1,20 +1,30 @@
+.asteroid-card{
+    padding: 10px;
+    position: relative;
+}
+
+
+
 .asteroid-container{
     display: flex !important;
     flex-direction: column;
-    border: solid 1px #71717a;
-    border-radius: 20px;
+    height: 510px;
+    border-radius: 10px;
+    border: solid 1px #d1d5db;
     padding: 10px;
 }
 
 .asteroid-Info{
+    position: relative;
     width: 400px;
-    height: 100px;
+    height: 100%;
+    display: grid;
     padding: 10px;
     border-top: solid 1px #71717a;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 6px;
-    margin-top: 80px
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 
@@ -28,6 +38,7 @@
 
 
 .asteroid-size{
+    color: #d1d5db;
     font-size: larger;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -63,15 +74,97 @@
 }
 
 .id{
+    color: #d1d5db;
     margin-left: 10px;
 }
 
 select{
     height: 40px;
     border-radius: 8px;
-    border: solid 1px #71717a;
+    border: solid 1px #d1d5db;
 }
 
 h2{
    padding-left: 8px;
+}
+
+.ast-circle{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    border: dashed 1px #d1d5db;
+    border-radius: 50%;
+    bottom: -400px;
+    right: -300px;
+}
+.ast-circle1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: dashed 1px #d1d5db;
+    border-radius: 50%;
+    bottom: -60px;
+    right: -200px;
+}
+.ast-circle2{
+    position: absolute;
+    width: 680px;
+    height: 300px;
+    border: dashed 1px #d1d5db;
+    border-radius: 50%;
+    bottom: -200px;
+    right: -60px;
+}
+.ast-star{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    position: absolute;
+    bottom: 80px;
+    right: 95px;
+}
+
+.ast-star1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    position: absolute;
+    bottom: 85px;
+    right: 160px;
+}
+
+.ast-line{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    border-bottom: dashed 1px #d1d5db;
+    bottom: 100px;
+    right: 0px;
+}
+.ast-line2{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    border-bottom: dashed 1px #d1d5db;
+    bottom: 115px;
+    right: 0px;
+}
+.ast-line3{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    border-bottom: dashed 1px #d1d5db;
+    bottom: 130px;
+    right: 0px;
+}
+.ast-star3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    position: absolute;
+    bottom: 125px;
+    right: 305px;
 }

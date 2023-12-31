@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import BottomNav from '../BottomNav/BottomNav';
+import TopLogo from '../TopLogo/TopLogo';
 
 
 
@@ -54,6 +55,7 @@ const Mars = () => {
 
     return (
         <>
+        <TopLogo />
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -85,6 +87,12 @@ const Mars = () => {
                     })
                 }
             </Swiper>
+            <div className='mars-rover-cont'>
+                <div className='mars-rover-card'>
+                    <h1 className='mars-rover-title'>Curiosity: The Mars Rover</h1>
+                    <h2>Curiosity is a car-sized Mars rover exploring Gale crater and Mount Sharp on Mars as part of NASA's Mars Science Laboratory //MSL mission. Curiosity was launched from Cape Canaveral //CCAFS on November 26, 2011, at 15:02:00 UTC and landed on Aeolis Palus inside Gale crater on Mars on August 6, 2012, 05:17:57 UTC.The Bradbury Landing site was less than 2.4 km //1.5 mi from the center of the rover's touchdown target after a 560 million km //350 million mi journey.</h2>
+                </div>
+            </div>
             <BottomNav />
         </>
 

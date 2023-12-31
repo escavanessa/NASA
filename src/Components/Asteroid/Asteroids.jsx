@@ -86,51 +86,52 @@ export const Asteroids = () => {
 
   return (
     <>
-    <TopLogo />
-      <div className='Photo-Wrapper'>
-        <div className='Card'>
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            {
-              data.near_earth_objects && data.near_earth_objects[select] && data.near_earth_objects[select].map((asteroid) => {
-                return (
+      <TopLogo />
+      <Swiper className='asteroid-card'
+        spaceBetween={50}
+        slidesPerView={1}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        {
+          data.near_earth_objects && data.near_earth_objects[select] && data.near_earth_objects[select].map((asteroid) => {
+            return (
 
-                  <SwiperSlide>
-                    <div className='asteroid-container'>
-                      <div className='asteroid-name'>
-                        <h1 className='title'>Name: {asteroid.name}</h1>
-                      </div>
-                      <div className='asteroid-size'>
-                        <h1 className='title'>Asteroid Size: </h1>
-                        <span className='size'>{asteroid.estimated_diameter.kilometers.estimated_diameter_max}</span>
-                      </div>
-                      <div className='asteroid-approach'>
-                        <h1 className='title'>Approach</h1>
-                        <h1 className='margin'>Date: <span>{asteroid.close_approach_data[0].close_approach_date_full}</span></h1>
-                        <h1 className='margin'>Orbiting Body:  <span>{asteroid.close_approach_data[0].orbiting_body}</span></h1>
-                        <h1 className='margin'>Miss Distance: <span>{asteroid.close_approach_data[0].miss_distance.kilometers} kilometers </span></h1>
-                      </div>
-                      <div className='asteroid-velocity'>
-                        <h1 className='title'>Velocity</h1>
-                        <h1>{asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour} km/h</h1>
-                      </div>
-                      <div className='asteroid-id'>
-                        <h1 className='title'>ID</h1>
-                        <span className='id'>{asteroid.neo_reference_id}</span>
-                      </div>
-                    </div>
+              <SwiperSlide>
+                <div className='asteroid-container'>
+                  <div className='asteroid-name'>
+                    <h1 className='title'>Name: {asteroid.name}</h1>
+                  </div>
+                  <div className='asteroid-size'>
+                    <h1 className='title'>Asteroid Size: </h1>
+                    <span className='size'>{asteroid.estimated_diameter.kilometers.estimated_diameter_max}<h2>diameter in kilometers</h2></span>
+                  </div>
+                  <div className='asteroid-approach'>
+                    <h1 className='title'>Approach</h1>
+                    <h2 className='margin'>Date: <span>{asteroid.close_approach_data[0].close_approach_date_full}</span></h2>
+                    <h2 className='margin'>Orbiting Body:  <span>{asteroid.close_approach_data[0].orbiting_body}</span></h2>
+                    <h2 className='margin'>Miss Distance: <span>{asteroid.close_approach_data[0].miss_distance.kilometers} kilometers </span></h2>
+                  </div>
+                  <div className='asteroid-velocity'>
+                    <h1 className='title'>Velocity</h1>
+                    <h2>{asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour} km/h</h2>
+                  </div>
+                  <div className='asteroid-id'>
+                    <h1 className='id-title'>ID</h1>
+                    <span className='id'>{asteroid.neo_reference_id}</span>
+                  </div>
+                </div>
 
-                  </SwiperSlide>
-                )
-              })
-            }
-          </Swiper>
-        </div>
-      </div>
+              </SwiperSlide>
+            )
+          })
+        }
+        <div className='ast-circle'></div>
+        <div className='ast-circle1'></div>
+        <div className='ast-circle2'></div>
+        <div className='ast-star'></div>
+        <div className='ast-star1'></div>
+      </Swiper>
       <div className='Info-Wrapper'>
         <div className='asteroid-Info'>
 
@@ -146,6 +147,10 @@ export const Asteroids = () => {
           <h2>Select a date and view all the Asteroids that are passing by and waving at Earth!</h2>
         </div>
       </div>
+      <div className='ast-line'></div>
+      <div className='ast-line2'></div>
+      <div className='ast-line3'></div>
+      <div className='ast-star3'></div>
       <BottomNav />
     </>
   )

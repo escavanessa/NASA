@@ -1,0 +1,106 @@
+.landing-container{
+    height: 100vh;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Landing-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.landing-title{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.landing-info{
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.landing-btn{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.btn-style{
+    font-size: 100px;
+}
+
+.circle{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: dashed 1px #d1d5db;
+    border-radius: 50%;
+    bottom: -60px;
+    right: -60px;
+}
+
+.circle2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: dashed 1px #d1d5db;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 200px;
+}
+
+.circle3{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: dashed 1px #d1d5db;
+    border-radius: 50%;
+    bottom: 200px;
+    right: -100px;
+}
+
+.little-star{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    border: solid 1px #d1d5db;
+    border-radius: 50%;
+    bottom: 500px;
+    right: 50px;
+}
+
+.little-star2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    border: solid 1px #d1d5db;
+    border-radius: 50%;
+    bottom: 288px;
+    right: 265px;
+}
+
+.little-star3{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    border: solid 1px #d1d5db;
+    border-radius: 50%;
+    bottom: 150px;
+    right: 210px;
+}
+
+.little-star4{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    border: solid 1px #d1d5db;
+    border-radius: 50%;
+    bottom: 332px;
+    right: 100px;
+}

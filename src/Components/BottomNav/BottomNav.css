@@ -1,6 +1,6 @@
 .botm-nav{
     display: flex;
-    background-color: #172554;
+    background-color: #d1d5db;
     height: 80px;
     align-items: center;
     position: fixed;
@@ -18,11 +18,11 @@
 }
 
 li {
-    color: #e4e4e7;
+    color: #18181b;
     font-style: oblique;
     font-weight: 600;
     cursor: pointer;
-    border: solid 1px #e4e4e7;
+    border: solid 1px #18181b;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 6px;
@@ -31,5 +31,5 @@ li {
 }
 
 .top {
-    box-shadow: 0 -5px 5px -5px #333;
+    box-shadow: 0 0px 10px 0px #09090b;
 }

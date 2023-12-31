@@ -10,6 +10,7 @@ import Photo from './Components/Photo/Photo.jsx';
 import { Asteroids } from './Components/Asteroid/Asteroids.jsx';
 import Mars from './Components/Mars/Mars.jsx';
 import Solar from './Components/Solar/Solar.jsx';
+import Landing from './Components/Landing/Landing.jsx';
 
 
 
@@ -18,6 +19,10 @@ import Solar from './Components/Solar/Solar.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Landing />,
+  },
+  {
+    path: "/nasa",
     element: <Photo />,
   },
   {

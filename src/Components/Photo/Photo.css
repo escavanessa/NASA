@@ -2,20 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.Card{
-    width: 400px;
-    height: 550px;
-    border-radius: 20px;
     padding: 10px;
 }
 
+
 img{
-    height: 100% !important;
     object-fit: cover;
-    border-radius: 20px;
-    border: solid 1px #71717a;
+    border-radius: 10px;
+
 }
 
 .Info-Wrapper{
@@ -26,45 +20,34 @@ img{
 
 .Info{
     width: 400px;
-    height: 200px;
     margin-left: 10px;
-    margin-top: 20px;
     margin-right: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-bottom: 90px;
+    border: solid 1px #d1d5db;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
 .inline{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
+    border-bottom: solid #d1d5db 1px;
+    margin-bottom: 20px;
 }
-
-.more{
-    margin-left: 160px;
-}
-.myBtn{
-    border: solid 1px #71717a !important;
-    border-radius: 20px;
-    width: 50px;
-    height: 30px;
-    margin-right: 10px;
-    color: #020617;
-}
-
 
 h2{
-   color: #27272a;
+   color: #d1d5db;
 }
 
+
+
 h1{
-    color: #18181b;
-    font-size: larger !important;
+    color: #d1d5db;
     font-weight: 600 !important;
     margin-left: 10px !important;
 }
 
+.photo-date {
+    font-size: xx-large !important;
+}
 
 
