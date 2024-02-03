@@ -51,7 +51,7 @@ function fetchData() {
 
 
 const Solar = () => {
-  const [data, setData] = useState({})
+  const [data, setData] = useState([])
 
   useEffect(() => {
     fetchData().then((response) => {
@@ -78,7 +78,7 @@ const Solar = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           {
-            Object.keys(data || {}).map((info, index) => {
+            (data || []).map((info, index) => {
               return (
                 <>
                   <SwiperSlide className='solar-info' key={index}>

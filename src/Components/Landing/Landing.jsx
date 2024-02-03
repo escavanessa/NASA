@@ -13,7 +13,7 @@ const Landing = () => {
           <h2 className='landing-info'>Enjoy your very own Space Cadet all from the comfort of your fingertips.</h2>
           <h2 className='landing-info'>Lets start our journey through Outer Space!</h2>
           <div className='landing-btn'>
-            <h1 className='btn-style'><Link to={'/nasa'}><FaArrowCircleRight /></Link></h1>
+            <h1 className='btn-style'><Link to={'/NASA/nasa'}><FaArrowCircleRight /></Link></h1>
           </div>
         </div>
         <div className='circle'></div>

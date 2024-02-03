@@ -4,11 +4,10 @@
 }
 
 
-
 .asteroid-container{
     display: flex !important;
     flex-direction: column;
-    height: 510px;
+    height: 100%;
     border-radius: 10px;
     border: solid 1px #d1d5db;
     padding: 10px;
@@ -23,8 +22,8 @@
     border-top: solid 1px #71717a;
     grid-template-columns: 1fr 1fr;
     column-gap: 6px;
-    margin-top: 20px;
     margin-bottom: 80px;
+    z-index: 96;
 }
 
 

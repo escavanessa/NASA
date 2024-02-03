@@ -18,23 +18,23 @@ import Landing from './Components/Landing/Landing.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/NASA",
     element: <Landing />,
   },
   {
-    path: "/nasa",
+    path: "/NASA/nasa",
     element: <Photo />,
   },
   {
-    path: "ast",
+    path: "/NASA/ast",
     element: <Asteroids />,
   },
   {
-    path: "mars",
+    path: "/NASA/mars",
     element: <Mars />,
   },
   {
-    path: "solar",
+    path: "/NASA/solar",
     element: <Solar />,
   },
 

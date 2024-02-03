@@ -1,6 +1,6 @@
 
 .solar-swiper{
-    height: 300px;
+    height: 100%;
 }
 
 .solar-wrapper{
@@ -29,8 +29,9 @@
 }
 
 .more-info{
-    height: 830px;
+    height: 100%;
     padding: 10px;
+    margin-bottom: 80px;
 }
 
 .more-info-card{
